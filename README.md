@@ -87,6 +87,11 @@ All > Knowledge > Articles > All <br>
 We'll open the record and click Publish
 ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Publish%20Knowledge%20Record.png?raw=true)
 
+So see it published we'll go to All > Service Deck > Knowledge <br>
+Click on DXC Tech IT Support KB <br>
+And we see the article <br>
+![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Published%20Article.png?raw=true)
+
 
 
 
