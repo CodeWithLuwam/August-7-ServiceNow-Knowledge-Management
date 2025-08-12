@@ -113,7 +113,7 @@ Once we go ahead and upload that article, it's going to get saved as a draft in 
 - After we click continue, it gives us the record number to click on for a preview of what the article would look like
   ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Preview%20of%20Article.png?raw=true)
 
----
+
 
 All > Knowledge > Articles > All <br>
 We'll open the record and click Publish
