@@ -64,12 +64,29 @@ Note: the Knowledge Category, even though we have one knowledge base, we can sti
 
 ---
 
-Inside the Can Read tab, we will click New to create a new user criteria record
-- for them to be able to read it, they need to have that specific role (DXC_employee)
-  ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/User%20Criteria%20New%20Record.png?raw=true)
+### 5. Configure Read & Contribute Access
+**Read Access** <br>
+- Go to the **Can Read** tab in the KB record. <br>
+- Click **New**:<br>
+    - **Name**: `DXC Employee`
+    - Add **DXC_employee** role.
+ ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/User%20Criteria%20New%20Record.png?raw=true)
+- Save. <br>
+
+**Contribute Access** <br>
+- Go to the **Can Contribute** tab.
+- Click **New**: <br>
+    - **Name**: `DXC KB Authors` <br>
+    - Add **Knowledge_Authors** role and **Knowledge_Authors** group. <br>
+    - Select **Match All** (must be in the group and have the role). <br>
+![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/User%20Criteria%20Can%20Contribute.png?raw=true)
+- Save.
+
+
+ 
 Next, we'll edit the Can Contribute tab - where they can read and edit.
 In this new Record, we have a few options. We have the option to add the Role we created for who can contribute and the group as well. So now its saying that if its part of the group or if it has that specific role. We will pick both and then select the Match All box which mean you have to be both part of the group and the specific role to be able to contribute to the specific knowledge base. 
-![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/User%20Criteria%20Can%20Contribute.png?raw=true)
+
 
 There are different ways that we could go ahead and combine it, though we could just make it so that only part of that group is required.
 And then we could give, read use or give that specific group the employee role, Since the role already exists for reading and that role kind of highlights being an employee for the company. Or we can just add anothe Can read criteria <br>
