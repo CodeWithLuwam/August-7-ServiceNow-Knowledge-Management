@@ -20,3 +20,23 @@ Your task:
     - Can Read: DXC_KB_Read_Access
     - Can Contribute: DXC_KB_Contribute_Access
 - **Test Access**
+
+---
+
+**First, create a role and a group**
+We're goning to do 2 different things:
+-A user which can go ahead and go into our knowledge base and just read articles right? They'll have the ability to use it, 
+-An author which is gonna be able to view it and make edits to it.
+
+The combinations are endless in this specific case but 
+- We are going to create one group and one role and reuse a role we have in the system which is DXC EMployee( If you are an Employee you should have acess to the knowledge base. Only if you're an author, then you have the ability to view it and edit. (we will create this)
+  ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/DXC%20Knowledge%20Authors%20Group.png?raw=true)
+
+  To create role:
+  All > Roles
+  ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/DXC%20Knowledge%20Authors%20Role.png?raw=true)
+
+  We now created a Group and Role, now we will add the role to the group we just created, and in the Roles tab, we will click Edit <br>
+  ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Edit%20Roles%20tab%20in%20the%20Authors%20Group%20.png?raw=true)
+
+
