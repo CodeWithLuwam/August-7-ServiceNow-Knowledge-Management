@@ -77,19 +77,22 @@ Note: the Knowledge Category, even though we have one knowledge base, we can sti
 - Go to the **Can Contribute** tab.
 - Click **New**: <br>
     - **Name**: `DXC KB Authors` <br>
-    - Add **Knowledge_Authors** role and **Knowledge_Authors** group. <br>
+    - Add **DXC Knowledge Authors** role and **DXC Knowledge Authors** group. <br>
     - Select **Match All** (must be in the group and have the role). <br>
 ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/User%20Criteria%20Can%20Contribute.png?raw=true)
 - Save.
 
+---
 
- 
-Next, we'll edit the Can Contribute tab - where they can read and edit.
-In this new Record, we have a few options. We have the option to add the Role we created for who can contribute and the group as well. So now its saying that if its part of the group or if it has that specific role. We will pick both and then select the Match All box which mean you have to be both part of the group and the specific role to be able to contribute to the specific knowledge base. 
+### 6. Add Articles
+- Navigate to: **All > Knowledge > Articles**
+- Click **Create New** (or **Import Articles**).
+- Select: <br>
+  - **Knowledge Base**: `DXC Tech IT Support KB`
+  - **Category**:` Data Issues`
+- Save as draft.
+- Click **Publish** (Instant Publish will make it live immediately).
 
-
-There are different ways that we could go ahead and combine it, though we could just make it so that only part of that group is required.
-And then we could give, read use or give that specific group the employee role, Since the role already exists for reading and that role kind of highlights being an employee for the company. Or we can just add anothe Can read criteria <br>
 We will give one more Can Read permission. We will add DXC KB Authors to Roles as well for Can Read.<br>
 ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/DXC%20KB%20Authors%20Can%20Read%20User%20Criteria.png?raw=true)
 
@@ -110,12 +113,20 @@ Once we go ahead and upload that article, it's going to get saved as a draft in 
 - After we click continue, it gives us the record number to click on for a preview of what the article would look like
   ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Preview%20of%20Article.png?raw=true)
 
+---
+
 All > Knowledge > Articles > All <br>
 We'll open the record and click Publish
 ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Publish%20Knowledge%20Record.png?raw=true)
 
-So see it published we'll go to All > Service Deck > Knowledge <br>
-Click on DXC Tech IT Support KB <br>
+---
+### 7. Test Access
+- Go to **All > Service Deck > Knowledge** <br>
+- Select **DXC Tech IT Support KB** <br>
+- Confirm: <br>
+    - Employees with `DXC_employee` role can read.
+    - Members of `Knowledge_Authors` group with the `Knowledge_Authors` role can **read and contribute**. <br>
+- Verify articles appear and permissions work as expected.
 And we see the article <br>
 ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Published%20Article.png?raw=true)
 
