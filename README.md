@@ -22,38 +22,48 @@ Your task:
 - **Test Access**
 
 ---
-
-**First, create a role and a group**
-We're goning to do 2 different things:
--A user which can go ahead and go into our knowledge base and just read articles right? They'll have the ability to use it, 
--An author which is gonna be able to view it and make edits to it.
-
-The combinations are endless in this specific case but 
-- We are going to create one group and one role and reuse a role we have in the system which is DXC EMployee( If you are an Employee you should have acess to the knowledge base. Only if you're an author, then you have the ability to view it and edit. (we will create this)
-  ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/DXC%20Knowledge%20Authors%20Group.png?raw=true)
-
-  To create role:
-  All > Roles
-  ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/DXC%20Knowledge%20Authors%20Role.png?raw=true)
-
-  We now created a Group and Role, now we will add the role to the group we just created, and in the Roles tab, we will click Edit <br>
-  ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Edit%20Roles%20tab%20in%20the%20Authors%20Group%20.png?raw=true)
-
-Inside the "Group Role – Edit Members" interface, the DXC Knowledge Authors role is assigned to the group by selecting it from the searchable list and adding it to the Roles List.
-  ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Group%20Role%20Edit%20Members.png?raw=true)
+### 1. Create the Custom Role
+- Navigate to: All > Roles
+- Click **New** and create the role: <br>
+    - **Name**: `Knowledge_Authors`
+- Save the role. <br>
+![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/DXC%20Knowledge%20Authors%20Role.png?raw=true)
 
 ---
-Now we will manually create the Knowledge Base:
-All > Knowledge > Administration > Knowledge Bases <br>
+### 2. Create the Group and Assign the Role
+- Go to: **All > User Administration > Groups**
+- Click **New** and create the group:
+    - Name: `Knowledge_Authors`
+- Save the group. <br>
+![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/DXC%20Knowledge%20Authors%20Group.png?raw=true)
+- Open the **Roles** tab in the group record.
+![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Edit%20Roles%20tab%20in%20the%20Authors%20Group%20.png?raw=true)
+- Click **Edit** and add the **Knowledge_Authors** role from the searchable list.
+![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Group%20Role%20Edit%20Members.png?raw=true)
+  
+---
 
-Once we get to the List of Knowledge Bases, we click New <br>
-
-Publish workflow (the process in which the article needs to get approved to actually show up on the knowledge base We will work with whats already loaded, the Knowledge - Instant Publish <br>
-After we save, we see that now we have USer Critirea tabs like Can Read, Can Contribute, and Knowledge Categories <br>
-Note: the Knowledge Category, even though we have one knowledge base, we can still split it up to different categories
+### 3. Create the Knowledge Base
+- Navigate to: **All > Knowledge > Administration > Knowledge Bases**
+- Click **New** and create the KB:
+    - **Name**: `DXC Tech IT Support KB`
+    - **Publish Workflow**: `Knowledge - Instant Publish`
+- Save the KB.
 ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Knowledge%20Base.png?raw=true)
-We'll create one category: Data Issues
+
+---
+
+### 4. Create Knowledge Categories
+- After saving, open the KB record and go to the **Knowledge Categories** tab.
+- Click **New** and create:
+    - **Name**: Data Issues <br>
 ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Knowledge%20Category%20-%20Data%20Issues.png?raw=true)
+
+
+Note: the Knowledge Category, even though we have one knowledge base, we can still split it up to different categories
+
+---
+
 Inside the Can Read tab, we will click New to create a new user criteria record
 - for them to be able to read it, they need to have that specific role (DXC_employee)
   ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/User%20Criteria%20New%20Record.png?raw=true)
