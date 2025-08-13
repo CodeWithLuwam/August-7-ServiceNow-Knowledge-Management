@@ -82,44 +82,33 @@ Note: the Knowledge Category, even though we have one knowledge base, we can sti
 ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/User%20Criteria%20Can%20Contribute.png?raw=true)
 - Save.
 
+[ Follow the steps in **Read Access** to give a Can Read permission to **DXC KB Authors** group. <br>
+Add DXC KB Authors to Roles.]  <br> 
+
+![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/DXC%20KB%20Authors%20Can%20Read%20User%20Criteria.png?raw=true)
+
 ---
 
 ### 6. Add Articles
+- Navigate to: **All > Service Deck > Knowledge** <br>
+![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Home%20Knowledge%20.png?raw=true) <br>
+We can see the new knowldege base has been created but there are no articles in the DXC Tech IT Support KB <br>
+![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/DXC%20Tech%20IT%20Support%20KB.png?raw=true) <br>
+To bring in articles:
 - Navigate to: **All > Knowledge > Articles**
 - Click **Create New** (or **Import Articles**).
 - Select: <br>
-  - **Knowledge Base**: `DXC Tech IT Support KB`
+  - **Knowledge Base**: `DXC Tech IT Support KB` (knowledge base created )
   - **Category**:` Data Issues`
-- Save as draft.
-- Click **Publish** (Instant Publish will make it live immediately).
-
-We will give one more Can Read permission. We will add DXC KB Authors to Roles as well for Can Read.<br>
-![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/DXC%20KB%20Authors%20Can%20Read%20User%20Criteria.png?raw=true)
-
-We will view the Knowledge Base
-All > Service Deck > Knowledge <br>
-We can see the new knowldege base has been created
-![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Home%20Knowledge%20.png?raw=true)
-
-There are no articles in the DXC Tech IT Support KB
-![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/DXC%20Tech%20IT%20Support%20KB.png?raw=true)
-To bring in articles:
-All > Knowledge > Articles(Module) > Create New *OR* Import Articles
-
-Once we go ahead and upload that article, it's going to get saved as a draft in the system. Since we chose the approval process to be instant. Once it gets published, it automatically gets added to our knowledge base.
-- Selet the appropriate knowledge base created : DXC Tech IT Support KB <br>
-- Select the category : Data Issues
 ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Import%20Article.png?raw=true)
+- Select upload (it's going to get saved as a draft in the system. Since we chose the approval process to be Instant Publish, once it gets published, it automatically gets added to our knowledge base.)
+- We'll open the record click **Publish** (Instant Publish will make it live immediately).<br>
+![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Publish%20Knowledge%20Record.png?raw=true)
 - After we click continue, it gives us the record number to click on for a preview of what the article would look like
   ![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Preview%20of%20Article.png?raw=true)
 
-
-
-All > Knowledge > Articles > All <br>
-We'll open the record and click Publish
-![](https://github.com/CodeWithLuwam/August-7-ServiceNow-Knowledge-Management/blob/main/Images/Publish%20Knowledge%20Record.png?raw=true)
-
 ---
+
 ### 7. Test Access
 - Go to **All > Service Deck > Knowledge** <br>
 - Select **DXC Tech IT Support KB** <br>
